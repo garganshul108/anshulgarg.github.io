@@ -1,1 +1,85 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <style>
+    /* Load the Maths Sans font */
+    @font-face {
+      font-family: 'Maths Sans';
+      src: url('path/to/maths-sans.woff2') format('woff2'),
+           url('path/to/maths-sans.woff') format('woff');
+      /* Add more font formats if required */
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      font-family: 'Maths Sans', Arial, sans-serif;
+      text-align: center;
+    }
+
+    /* Rest of the CSS styles remain the same */
+    h1, h2 {
+      color: #333;
+    }
+
+    form {
+      display: inline-block;
+      text-align: left;
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 480px) {
+      form {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+<h1>Anshul Garg</h1>
+<h2>+91 760 749 1516</h2>
+
+<form action="https://formspree.io/f/mbjevgee"
+      method="POST">
+    <input type="email" id="email" name="email" placeholder="Email address" required><br><br>
+
+    <input type="text" id="phone" name="phone" placeholder="Phone number"><br><br>
+
+    <label for="query">Query:</label><br>
+    <textarea id="query" name="message" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
